@@ -1,0 +1,108 @@
+.m-wrapper {
+	width: 100vw;
+	height: 100vh;
+	padding: 3.375rem 5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--m-default-background);
+}
+
+/* MENU AND CHILD COMPONENTS STYLES */
+
+.m-menu {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.m-logo {
+	font-size: 3rem;
+	color: var(--m-primary);
+	text-transform: lowercase;
+	user-select: none;
+	font-weight: 600;
+}
+
+.m-menu-nav {
+	display: flex;
+	flex-direction: row;
+	gap: 1.5rem;
+}
+
+.m-menu__button {
+	width: 10.75rem;
+	height: 3rem;
+	border-radius: 2.75rem;
+	font-size: 1.25rem;
+	font-weight: 400;
+	text-align: center;
+	cursor: pointer;
+}
+
+.m-settings {
+	width: 3rem;
+	height: 3rem;
+	border-radius: 2.75rem;
+	color: black;
+	background-color: var(--m-primary-background);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+/* GAME BOARD */
+
+.m-board {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	gap: 1.375rem;
+	grid-template-areas:
+		'. . . .'
+		'. . . .'
+		'. . . .'
+		'. . . .';
+}
+
+.m-card {
+	width: 8.5rem;
+	height: 8.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--m-primary);
+	border-radius: 10rem;
+	color: white;
+	cursor: pointer;
+}
+
+/* GAME INFO */
+
+.m-info {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.m-info--data {
+	font-size: 2rem;
+	font-weight: 400;
+}
+
+/* UTILS CLASSES */
+
+.click-effect {
+	box-shadow: 0 2px 1px var(--m-shadow);
+}
+
+.click-effect:active {
+	box-shadow: 0 1px 1px var(--m-shadow);
+	transform: translateY(1px);
+}
